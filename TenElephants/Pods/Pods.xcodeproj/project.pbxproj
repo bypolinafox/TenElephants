@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F63A5FA40B115852EEB7386E14F799A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2A344C16F1C25DB2BFF19CF1F9ACF518 /* Pods-TenElephants-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26E795F5DABC4BD36C751C64D995DA7D /* Pods-TenElephants-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B7012877E92201E258A2C84F54E361E /* NetWorkerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7723803EBC6B2858253C0378287B51EA /* NetWorkerUtils.swift */; };
+		464CF106BE7C1C96BAD92AAE387B4650 /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0816E997E16FEE439DBECC0F7DF356B0 /* OperationQueue.swift */; };
+		47FC23488CC761E2FE36F50CF83DD9EC /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3411E69ADB69D8FD426B922392E37 /* SwiftUIView.swift */; };
+		8873AA17E562B351914932698AE14232 /* NetworkFetchingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4ADEF0EFFE61A30E729E58408E73EE /* NetworkFetchingError.swift */; };
+		8D7F7F51F5822F513EBDD92E04899AF5 /* NetWorkerServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050A23F0709B667324C3C4562691FF8C /* NetWorkerServiceProtocol.swift */; };
+		8E0492F81F6001B1A679B18045B01CA9 /* ExponentialBackoffDelayCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A00F6E1FC38E75E6CF4E15F458C09 /* ExponentialBackoffDelayCalculator.swift */; };
+		9B7FEE614F318BB309C577FB7B69D6D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A5A60C7F9EF62718580DEF22C5B6349F /* RequestCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10A60C7CC8003ACC38D9DEDCFB999B7 /* RequestCreator.swift */; };
+		D6DA75E32E8837CFEBF37D3A683F456D /* Pods-TenElephants-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 218F3BE9173FD59D71755BE286E244BF /* Pods-TenElephants-dummy.m */; };
+		EBA7707D84DF0C37E259110F29A2861B /* NetWorkerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB4B8AD2B515825F3EDE06AE436C7 /* NetWorkerService.swift */; };
+		F4D8CA4B32D9D242B24977A2CB7CA913 /* NetWorkerLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA61C127AD1719727B983A30C5731BC /* NetWorkerLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F54ABB855620412EA94EFA4A91969BDF /* NetWorkerLibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E717322956D1882B59A3B3DEC8094264 /* NetWorkerLibrary-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD1B0A064F363029B84578F473A3E32D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCFF596E5418ABD67909BC0E748B4622;
+			remoteInfo = NetWorkerLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		001A00F6E1FC38E75E6CF4E15F458C09 /* ExponentialBackoffDelayCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExponentialBackoffDelayCalculator.swift; path = Sources/NetWorker/ExponentialBackoffDelayCalculator.swift; sourceTree = "<group>"; };
+		050A23F0709B667324C3C4562691FF8C /* NetWorkerServiceProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetWorkerServiceProtocol.swift; path = Sources/NetWorker/NetWorkerServiceProtocol.swift; sourceTree = "<group>"; };
+		0816E997E16FEE439DBECC0F7DF356B0 /* OperationQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationQueue.swift; path = Sources/NetWorker/OperationQueue.swift; sourceTree = "<group>"; };
+		11A3411E69ADB69D8FD426B922392E37 /* SwiftUIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUIView.swift; path = Sources/NetWorker/SwiftUIView.swift; sourceTree = "<group>"; };
+		218F3BE9173FD59D71755BE286E244BF /* Pods-TenElephants-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TenElephants-dummy.m"; sourceTree = "<group>"; };
+		26AB09B887022554C7A524147C2A0FD3 /* NetWorkerLibrary */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NetWorkerLibrary; path = NetWorkerLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E795F5DABC4BD36C751C64D995DA7D /* Pods-TenElephants-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TenElephants-umbrella.h"; sourceTree = "<group>"; };
+		2BA61C127AD1719727B983A30C5731BC /* NetWorkerLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NetWorkerLibrary-umbrella.h"; sourceTree = "<group>"; };
+		3026479182F39C2A0BDE7A19E2B7DAD3 /* Pods-TenElephants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TenElephants.release.xcconfig"; sourceTree = "<group>"; };
+		3DB6C87BE854E69A95FDBB3D5B0306B0 /* NetWorkerLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NetWorkerLibrary.release.xcconfig; sourceTree = "<group>"; };
+		3E4ADEF0EFFE61A30E729E58408E73EE /* NetworkFetchingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkFetchingError.swift; path = Sources/NetWorker/NetworkFetchingError.swift; sourceTree = "<group>"; };
+		40A65E1F06A6C91076DB67CFFE974D41 /* Pods-TenElephants-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TenElephants-Info.plist"; sourceTree = "<group>"; };
+		45C457CFF0B2EB7C5F95B305FF9D06AA /* Pods-TenElephants-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TenElephants-acknowledgements.plist"; sourceTree = "<group>"; };
+		4895CFEFF842B8A74D4E1A9B8B5B5E4D /* Pods-TenElephants-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TenElephants-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5233B3368C7C32792C9880E37B8115D3 /* NetWorkerLibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NetWorkerLibrary-prefix.pch"; sourceTree = "<group>"; };
+		6D585EA0C13343BD0788698FE8AF3A35 /* Pods-TenElephants.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TenElephants.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7723803EBC6B2858253C0378287B51EA /* NetWorkerUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetWorkerUtils.swift; path = Sources/NetWorker/NetWorkerUtils.swift; sourceTree = "<group>"; };
+		7B64A1A050F7AE0640A609675E1D4CBD /* NetWorkerLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NetWorkerLibrary.modulemap; sourceTree = "<group>"; };
+		83DE6D68F44F0758D3F63CB330071F10 /* NetWorkerLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NetWorkerLibrary.debug.xcconfig; sourceTree = "<group>"; };
+		8C040F1DBCFEF08E350A4DA7F2AA9A4F /* Pods-TenElephants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TenElephants.debug.xcconfig"; sourceTree = "<group>"; };
+		95011D0BD9812EEB1D8A88871C61BDD8 /* NetWorkerLibrary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NetWorkerLibrary-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EF9F87F085CAAFBA18FFB9762188B12 /* Pods-TenElephants-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TenElephants-frameworks.sh"; sourceTree = "<group>"; };
+		C52A7412CFA203BD2D361F5D60303501 /* Pods-TenElephants */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TenElephants"; path = Pods_TenElephants.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10A60C7CC8003ACC38D9DEDCFB999B7 /* RequestCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCreator.swift; path = Sources/NetWorker/RequestCreator.swift; sourceTree = "<group>"; };
+		E717322956D1882B59A3B3DEC8094264 /* NetWorkerLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NetWorkerLibrary-dummy.m"; sourceTree = "<group>"; };
+		EA0DB4B8AD2B515825F3EDE06AE436C7 /* NetWorkerService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetWorkerService.swift; path = Sources/NetWorker/NetWorkerService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11341D7D5CB6D2E6ACB1423613DB593F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F63A5FA40B115852EEB7386E14F799A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A71379C97FC01A7E71D545DD3CB3A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7FEE614F318BB309C577FB7B69D6D4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20B253CCB2D538BA081D2D7872F758D4 /* Pods-TenElephants */ = {
+			isa = PBXGroup;
+			children = (
+				6D585EA0C13343BD0788698FE8AF3A35 /* Pods-TenElephants.modulemap */,
+				4895CFEFF842B8A74D4E1A9B8B5B5E4D /* Pods-TenElephants-acknowledgements.markdown */,
+				45C457CFF0B2EB7C5F95B305FF9D06AA /* Pods-TenElephants-acknowledgements.plist */,
+				218F3BE9173FD59D71755BE286E244BF /* Pods-TenElephants-dummy.m */,
+				9EF9F87F085CAAFBA18FFB9762188B12 /* Pods-TenElephants-frameworks.sh */,
+				40A65E1F06A6C91076DB67CFFE974D41 /* Pods-TenElephants-Info.plist */,
+				26E795F5DABC4BD36C751C64D995DA7D /* Pods-TenElephants-umbrella.h */,
+				8C040F1DBCFEF08E350A4DA7F2AA9A4F /* Pods-TenElephants.debug.xcconfig */,
+				3026479182F39C2A0BDE7A19E2B7DAD3 /* Pods-TenElephants.release.xcconfig */,
+			);
+			name = "Pods-TenElephants";
+			path = "Target Support Files/Pods-TenElephants";
+			sourceTree = "<group>";
+		};
+		39C0E26F8BB4BA74B40E3034FD741A29 /* NetWorkerLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				001A00F6E1FC38E75E6CF4E15F458C09 /* ExponentialBackoffDelayCalculator.swift */,
+				EA0DB4B8AD2B515825F3EDE06AE436C7 /* NetWorkerService.swift */,
+				050A23F0709B667324C3C4562691FF8C /* NetWorkerServiceProtocol.swift */,
+				7723803EBC6B2858253C0378287B51EA /* NetWorkerUtils.swift */,
+				3E4ADEF0EFFE61A30E729E58408E73EE /* NetworkFetchingError.swift */,
+				0816E997E16FEE439DBECC0F7DF356B0 /* OperationQueue.swift */,
+				E10A60C7CC8003ACC38D9DEDCFB999B7 /* RequestCreator.swift */,
+				11A3411E69ADB69D8FD426B922392E37 /* SwiftUIView.swift */,
+				CF8AD894D1B5F74A95063C2FC162C6FE /* Support Files */,
+			);
+			name = NetWorkerLibrary;
+			path = NetWorkerLibrary;
+			sourceTree = "<group>";
+		};
+		49B88707E9B74502FC08190134506547 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39C0E26F8BB4BA74B40E3034FD741A29 /* NetWorkerLibrary */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		68778A3710C6C054F3134BE44CA13EC0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20B253CCB2D538BA081D2D7872F758D4 /* Pods-TenElephants */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BFF5E2A4DC3D1CB65DD9054093039BE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26AB09B887022554C7A524147C2A0FD3 /* NetWorkerLibrary */,
+				C52A7412CFA203BD2D361F5D60303501 /* Pods-TenElephants */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				49B88707E9B74502FC08190134506547 /* Pods */,
+				BFF5E2A4DC3D1CB65DD9054093039BE8 /* Products */,
+				68778A3710C6C054F3134BE44CA13EC0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF8AD894D1B5F74A95063C2FC162C6FE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B64A1A050F7AE0640A609675E1D4CBD /* NetWorkerLibrary.modulemap */,
+				E717322956D1882B59A3B3DEC8094264 /* NetWorkerLibrary-dummy.m */,
+				95011D0BD9812EEB1D8A88871C61BDD8 /* NetWorkerLibrary-Info.plist */,
+				5233B3368C7C32792C9880E37B8115D3 /* NetWorkerLibrary-prefix.pch */,
+				2BA61C127AD1719727B983A30C5731BC /* NetWorkerLibrary-umbrella.h */,
+				83DE6D68F44F0758D3F63CB330071F10 /* NetWorkerLibrary.debug.xcconfig */,
+				3DB6C87BE854E69A95FDBB3D5B0306B0 /* NetWorkerLibrary.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NetWorkerLibrary";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F359F937083B509875B6FC1585DB007 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D8CA4B32D9D242B24977A2CB7CA913 /* NetWorkerLibrary-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69C5CF414E19774971EDA2959F8AE27 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A344C16F1C25DB2BFF19CF1F9ACF518 /* Pods-TenElephants-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BABD523BBC43F9EF564A13E9B1E32686 /* Pods-TenElephants */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 103AB2B997DBB07DBD570A8787BF34BB /* Build configuration list for PBXNativeTarget "Pods-TenElephants" */;
+			buildPhases = (
+				B69C5CF414E19774971EDA2959F8AE27 /* Headers */,
+				15C84E624D593348088DCD2F4876444A /* Sources */,
+				25A71379C97FC01A7E71D545DD3CB3A1 /* Frameworks */,
+				C82179298A3CE773945199F172F0BF26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB57CBBC1E7C38B939A53683D4D10A7B /* PBXTargetDependency */,
+			);
+			name = "Pods-TenElephants";
+			productName = Pods_TenElephants;
+			productReference = C52A7412CFA203BD2D361F5D60303501 /* Pods-TenElephants */;
+			productType = "com.apple.product-type.framework";
+		};
+		BCFF596E5418ABD67909BC0E748B4622 /* NetWorkerLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9827CDA58083807F3AEA0961550574CB /* Build configuration list for PBXNativeTarget "NetWorkerLibrary" */;
+			buildPhases = (
+				0F359F937083B509875B6FC1585DB007 /* Headers */,
+				A4A3521F52418AF2283BC932BD38D36B /* Sources */,
+				11341D7D5CB6D2E6ACB1423613DB593F /* Frameworks */,
+				821BB458A2552F2A418511616193F6C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetWorkerLibrary;
+			productName = NetWorkerLibrary;
+			productReference = 26AB09B887022554C7A524147C2A0FD3 /* NetWorkerLibrary */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = BFF5E2A4DC3D1CB65DD9054093039BE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCFF596E5418ABD67909BC0E748B4622 /* NetWorkerLibrary */,
+				BABD523BBC43F9EF564A13E9B1E32686 /* Pods-TenElephants */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		821BB458A2552F2A418511616193F6C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C82179298A3CE773945199F172F0BF26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15C84E624D593348088DCD2F4876444A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6DA75E32E8837CFEBF37D3A683F456D /* Pods-TenElephants-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A3521F52418AF2283BC932BD38D36B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0492F81F6001B1A679B18045B01CA9 /* ExponentialBackoffDelayCalculator.swift in Sources */,
+				F54ABB855620412EA94EFA4A91969BDF /* NetWorkerLibrary-dummy.m in Sources */,
+				EBA7707D84DF0C37E259110F29A2861B /* NetWorkerService.swift in Sources */,
+				8D7F7F51F5822F513EBDD92E04899AF5 /* NetWorkerServiceProtocol.swift in Sources */,
+				2B7012877E92201E258A2C84F54E361E /* NetWorkerUtils.swift in Sources */,
+				8873AA17E562B351914932698AE14232 /* NetworkFetchingError.swift in Sources */,
+				464CF106BE7C1C96BAD92AAE387B4650 /* OperationQueue.swift in Sources */,
+				A5A60C7F9EF62718580DEF22C5B6349F /* RequestCreator.swift in Sources */,
+				47FC23488CC761E2FE36F50CF83DD9EC /* SwiftUIView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB57CBBC1E7C38B939A53683D4D10A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NetWorkerLibrary;
+			target = BCFF596E5418ABD67909BC0E748B4622 /* NetWorkerLibrary */;
+			targetProxy = AD1B0A064F363029B84578F473A3E32D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3BF297EAB215888F30EC032EC0EFDE2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB6C87BE854E69A95FDBB3D5B0306B0 /* NetWorkerLibrary.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NetWorkerLibrary/NetWorkerLibrary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NetWorkerLibrary/NetWorkerLibrary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NetWorkerLibrary/NetWorkerLibrary.modulemap";
+				PRODUCT_MODULE_NAME = NetWorkerLibrary;
+				PRODUCT_NAME = NetWorkerLibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		76E1F438613A912317D32A373B88905A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83DE6D68F44F0758D3F63CB330071F10 /* NetWorkerLibrary.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NetWorkerLibrary/NetWorkerLibrary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NetWorkerLibrary/NetWorkerLibrary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NetWorkerLibrary/NetWorkerLibrary.modulemap";
+				PRODUCT_MODULE_NAME = NetWorkerLibrary;
+				PRODUCT_NAME = NetWorkerLibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8EBE0E588C184BB2A56197078BF659A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C040F1DBCFEF08E350A4DA7F2AA9A4F /* Pods-TenElephants.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TenElephants/Pods-TenElephants-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TenElephants/Pods-TenElephants.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C03E0BA1D88B0F6D984181F59FD7743B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3026479182F39C2A0BDE7A19E2B7DAD3 /* Pods-TenElephants.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TenElephants/Pods-TenElephants-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TenElephants/Pods-TenElephants.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		103AB2B997DBB07DBD570A8787BF34BB /* Build configuration list for PBXNativeTarget "Pods-TenElephants" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EBE0E588C184BB2A56197078BF659A5 /* Debug */,
+				C03E0BA1D88B0F6D984181F59FD7743B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9827CDA58083807F3AEA0961550574CB /* Build configuration list for PBXNativeTarget "NetWorkerLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76E1F438613A912317D32A373B88905A /* Debug */,
+				3BF297EAB215888F30EC032EC0EFDE2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

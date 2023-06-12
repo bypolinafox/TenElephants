@@ -1,0 +1,16 @@
+PODS:
+  - NetWorkerLibrary (0.1.3)
+
+DEPENDENCIES:
+  - NetWorkerLibrary (~> 0.1.3)
+
+SPEC REPOS:
+  trunk:
+    - NetWorkerLibrary
+
+SPEC CHECKSUMS:
+  NetWorkerLibrary: 5c1fd97b6109701a6c8e8ef6e3fb13af062e4410
+
+PODFILE CHECKSUM: eec62338f5627bb1cf0525156f2febc54a69072d
+
+COCOAPODS: 1.12.1

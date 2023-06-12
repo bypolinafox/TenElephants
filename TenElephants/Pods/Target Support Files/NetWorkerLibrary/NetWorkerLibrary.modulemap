@@ -1,0 +1,6 @@
+framework module NetWorkerLibrary {
+  umbrella header "NetWorkerLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}
